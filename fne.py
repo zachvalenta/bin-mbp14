@@ -23,8 +23,8 @@ else:
 
 print_names(new_names, "updated names")
 
-user_confirmation = input("look good? ('y' for yes, 'n' for no) ➡️   ")
-if(user_confirmation=='y'):
+user_confirmation = input("look good? (RETURN to execute ||| 'r' to redo args ||| 'q' to quit) ➡️   ")
+if(user_confirmation==""):
 	print('modification confirmed')
 	for orig, new in zip(orig_names, new_names):
 		os.rename(orig, new)
@@ -34,12 +34,11 @@ else:
 
 """
 TODOs:
-default flag for `-e 12`
-colored text -> https://pypi.org/project/colorama/
+colored text -> https://pypi.org/project/coloramai/
 fix `+".mp3"` hack (regex? https://pyformat.info/? )
 `default` perhaps unnecessary (bc if not passed arg defaults to None anyway)
 zip() -> https://docs.quantifiedcode.com/python-anti-patterns/readability/not_using_zip_to_iterate_over_a_pair_of_lists.html
 how do `nargs` really work? -> https://stackoverflow.com/questions/15301147/python-argparse-default-value-or-specified-value
 https://github.com/thameera/vimv
+https://news.ycombinator.com/item?id=13890944
 """
-
