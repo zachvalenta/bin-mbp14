@@ -46,7 +46,7 @@ if args.end:
 	new_names = [x[args.start:args.end-4]+".mp3" for x in os.listdir('.') if x[-3:]=="mp3" and os.path.isfile(x)]
 # --start
 else:
-	new_names = [x[args.start:]+".mp3" for x in os.listdir('.') if x[-3:]=="mp3" and os.path.isfile(x)]
+	new_names = [x[args.start:] for x in os.listdir('.') if x[-3:]=="mp3" and os.path.isfile(x)]
 
 # --lowercase
 if args.lowercase:
