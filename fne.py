@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-import os, argparse, sys
+
+"""
+fne = file name editor
+"""
+
+import argparse
+import os
+import sys
+
 
 def print_names(names, msg):
 	print("{:*^30s}".format(msg))
