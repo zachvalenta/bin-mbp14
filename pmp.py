@@ -38,7 +38,6 @@ source_code = """def return_something():
 """
 
 test_code = """import unittest
-import 
 
 
 class TestSUT(unittest.TestCase):
