@@ -10,5 +10,6 @@ grab bag of utilities I'm hacking on in order to:
 ## manifest of scripts
 
 - `fne.py` (file name editor): CLI for file edits using argparse
-- `kcm.sh` (kill cmus): cmus doesn't play well with Bluetooth 😑
+- `kcm.sh` (kill cmus): cmus doesn't play well with Bluetooth and I frequently need to kill the process 😑
 - `pmp.py` (Python make Python): boilerplate for Python project
+- `qing.py`: wrapper around `send2trash`
