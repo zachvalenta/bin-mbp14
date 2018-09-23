@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-pmp = Python makes Python (project)
+pmp = Python make Python (project)
 """
 
 
@@ -46,22 +46,28 @@ class TestSUT(unittest.TestCase):
 		self.assertEqual(True, True)
 """
 
-# PROJECT-LEVEL
+# WRITE ROOT
 make_dirs([project_root])
 os.chdir(project_root)
 make_dirs(pkgs)
 make_files(root_files)
 
-# SOURCE
+# WRITE SOURCE
 os.chdir('source')
 make_files(source_mods)
 write_file('sut.py', source_code)
 
-# TESTS
+# WRITE TESTS
 os.chdir('../tests')
 make_files(test_mods)
 write_file('test_sut.py', test_code)
 
-
 # RUN TESTS
 os.system('python3 -m unittest discover')
+
+# GIT
+os.chdir('..')
+os.system('git init')
+os.system('git add .')
+os.system("git commit -m 'bootstrap project' ")
+os.system('git log --graph -n 10 --oneline --all --decorate')
