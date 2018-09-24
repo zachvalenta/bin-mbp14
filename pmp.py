@@ -27,7 +27,7 @@ def write_file(file, content):
 
 # PACKAGES, MODULES, FILES
 project_root = sys.argv[1]
-pkgs = ['source', 'tests']
+pkgs = ['src', 'tests']
 root_files = ['README.md']
 source_mods = ['sut.py']
 test_mods = ['__init__.py', 'test_sut.py']
