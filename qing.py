@@ -10,4 +10,7 @@ import sys
 from send2trash import send2trash
 
 for i in sys.argv[1:]:
-	send2trash(i)
+	try:
+		send2trash(i)
+	except OSError:
+		print('❓  could not find file/dir to delete')
