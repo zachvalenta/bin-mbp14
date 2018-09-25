@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-pmp = Python make Python (project)
+pyp = Python project
 """
 
 
