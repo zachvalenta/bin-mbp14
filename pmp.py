@@ -27,10 +27,10 @@ def write_file(file, content):
 
 # PACKAGES, MODULES, FILES
 project_root = sys.argv[1]
-pkgs = ['src', 'tests']
+pkgs = ['src', 'test']
 root_files = ['README.md']
-source_mods = ['sut.py']
-test_mods = ['__init__.py', 'test_sut.py']
+source_mods = ['app.py']
+test_mods = ['__init__.py', 'test_app.py']
 
 # CODE
 source_code = """def return_something():
@@ -40,7 +40,7 @@ source_code = """def return_something():
 test_code = """import unittest
 
 
-class TestSUT(unittest.TestCase):
+class TestApp(unittest.TestCase):
 	
 	def test_sanity(self):
 		self.assertEqual(True, True)
@@ -53,17 +53,17 @@ make_dirs(pkgs)
 make_files(root_files)
 
 # WRITE SOURCE
-os.chdir('source')
+os.chdir('src')
 make_files(source_mods)
-write_file('sut.py', source_code)
+write_file('app.py', source_code)
 
 # WRITE TESTS
-os.chdir('../tests')
+os.chdir('../test')
 make_files(test_mods)
-write_file('test_sut.py', test_code)
+write_file('test_app.py', test_code)
 
 # RUN TESTS
-os.system('python3 -m unittest discover')
+os.system('python3 -m unittest discover -v')
 
 # GIT
 os.chdir('..')
