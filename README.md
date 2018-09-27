@@ -1,16 +1,13 @@
 # util scripts
 
-## why?
+## Bash
 
-grab bag of utilities I'm hacking on in order to: 
+- `jh.sh` ('家伙儿'): wrapper around Git workflow
+- `kcm.sh` ('kill cmus'): cmus doesn't play well with Bluetooth and I frequently need to kill the process 😑
 
-* improve at sysadmin/devops tasks
-* fix (mostly self-inflicted) problems on my personal machine
+## Python
 
-## manifest of scripts
-
-- `fne.py` (file name editor): CLI for file edits using argparse
-- `kcm.sh` (kill cmus): cmus doesn't play well with Bluetooth and I frequently need to kill the process 😑
-- `pmp.py` (Python make Python): boilerplate for Python project
-- `qing.py`: wrapper around `send2trash`
-- `qiu.py`: wrapper around httpie
+- `fne.py` ('file name editor'): CLI for file edits using argparse
+- `pyp.py` ('Python project'): boilerplate for Python project
+- `qing.py` ('清'): wrapper around `send2trash`
+- `qiu.py` ('求'): wrapper around httpie
