@@ -9,5 +9,17 @@ httpie version: 0.9.9
 import os
 import sys
 
-base = 'http://127.0.0.1:{}/{}'.format(sys.argv[1], sys.argv[2])
-os.system('http {}'.format(base))
+
+def make_url(port, path):
+	url = 'http://127.0.0.1:{}/{}'.format(port, path)
+	return url
+
+
+port_num = sys.argv[1]
+
+try:
+	path_name = sys.argv[2]
+except IndexError:
+	path_name = ''
+
+os.system('http {}'.format(make_url(port_num, path_name)))
