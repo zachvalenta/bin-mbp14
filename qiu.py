@@ -6,6 +6,8 @@ qiu = wrapper around httpie
 httpie version: 0.9.9
 """
 
+# TODO: handle HTTP verbs
+
 import os
 import sys
 
