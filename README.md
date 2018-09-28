@@ -7,6 +7,7 @@
 
 ## Python
 
+- `flash.py`: open up everything I need for project on Flash Boys 🏦
 - `fne.py` ('file name editor'): CLI for file edits using argparse
 - `pyp.py` ('Python project'): boilerplate for Python project
 - `qing.py` ('清'): wrapper around `send2trash`
