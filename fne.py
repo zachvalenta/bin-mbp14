@@ -2,6 +2,16 @@
 
 """
 fne = file name editor
+
+TODO
+switch statement https://www.youtube.com/watch?v=gllUwQnYVww
+colored text -> https://pypi.org/project/coloramai/
+fix `+".mp3"` hack (regex? https://pyformat.info/?)
+deal w/ '.mp4' extensions
+add lowercase option, https://app.pluralsight.com/library/courses/node-js-building-command-line-app/table-of-contents
+zip() -> https://docs.quantifiedcode.com/python-anti-patterns/readability/not_using_zip_to_iterate_over_a_pair_of_lists.html
+how do `nargs` really work? -> https://stackoverflow.com/questions/15301147/python-argparse-default-value-or-specified-value
+类似 `fne.py`: [vimv](https://github.com/thameera/vimv) [renamer](https://www.npmjs.com/package/renamer) [moreutils](https://news.ycombinator.com/item?id=13890944)
 """
 
 import argparse

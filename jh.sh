@@ -17,7 +17,10 @@ echo -en "$(tput setaf 5)MSG$(tput sgr0)\n --> "
 read msg
 commit="$(git commit -m "$msg")"
 
-# display commit and push
+# display commit
 echo -en "$(tput setaf 5)COMMIT$(tput sgr0)\n"
 echo "${commit}"
+
+# push
+echo -en "$(tput setaf 5)PUSH$(tput sgr0)\n"
 git push
