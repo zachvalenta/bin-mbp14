@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # TODO: move to `printf`
-# TODO: possible to add `diff` given that it's interactive?
+# TODO: incorporate `diff`
 
 # stage everything
 echo -en "$(tput setaf 5)STATUS$(tput sgr0)\n"

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-charm $HOME/Desktop/zvmac/materials/sw/za/algos
+charm $HOME/Desktop/zvmac/materials/sw/za/algos/algo-impl
 open $HOME/Desktop/zvmac/materials/sw/za/algos/grokking-algos/grokking-algos.pdf
 open $HOME/Desktop/zvmac/notes/sw/za/za/algos.md
 cd $HOME/Desktop/zvmac/materials/sw/za/algos/algo-impl

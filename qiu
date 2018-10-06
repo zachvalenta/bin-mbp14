@@ -6,7 +6,8 @@ qiu = wrapper around httpie
 httpie version: 0.9.9
 """
 
-# TODO: handle HTTP verbs
+# TODO: handle POST -> `http POST http://127.0.0.1:5000/books @payload.json`
+# TODO: add flags -> `qiu -po 5000 -pa book`
 
 import os
 import sys
