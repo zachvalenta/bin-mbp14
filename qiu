@@ -6,23 +6,46 @@ qiu = wrapper around httpie
 httpie version: 0.9.9
 """
 
-# TODO: handle POST -> `http POST http://127.0.0.1:5000/books @payload.json`
-# TODO: add flags -> `qiu -po 5000 -pa book`
+# TODO: port as required arg
 
+import argparse
 import os
 import sys
 
 
-def make_url(port, path):
-	url = 'http://127.0.0.1:{}/{}'.format(port, path)
-	return url
+def parse_args():
+	parser = argparse.ArgumentParser()
+	parser.add_argument("-j", "--json", help=".json for request", action='store')
+	parser.add_argument("-m", "--method", help="HTTP method", action='store')
+	parser.add_argument("-pa", "--path", help="path", action='store')
+	parser.add_argument("-po", "--port", help="port number", type=int, nargs='?', default=None)
+	if len(sys.argv) == 1:
+		print('whoops')
+		parser.print_help()
+		sys.exit()
+	return parser.parse_args()
 
 
-port_num = sys.argv[1]
+# take args
+args = parse_args()
 
-try:
-	path_name = sys.argv[2]
-except IndexError:
-	path_name = ''
+# base command
+command = 'http://127.0.0.1:{}'.format(args.port)
 
-os.system('http {}'.format(make_url(port_num, path_name)))
+# path
+if args.path:
+	command = '{}/{}'.format(command, args.path)
+
+# payload
+if args.json:
+	command = '{} @{}.json'.format(command, args.json)
+
+# method
+if args.method:
+	command = '{} {}'.format(args.method, command)
+
+# add command
+command = 'http {}'.format(command)
+
+# req
+os.system(command)

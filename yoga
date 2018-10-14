@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+open $HOME/Desktop/zvmac/materials/jay/training/yoga-breathing.mp4

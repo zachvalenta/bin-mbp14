@@ -18,6 +18,7 @@
 
 ## TODO
 
+- [ ] `dance`, `viz` to Bash
 - [ ] sym links
 - [ ] mirror music lib as text files https://facebook.github.io/watchman/
 - [ ] zsh + 艘 'FreeCodeCamp Medium style terminal'
