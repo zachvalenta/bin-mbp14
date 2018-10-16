@@ -14,13 +14,15 @@ import sys
 
 
 def parse_args():
-	parser = argparse.ArgumentParser()
+	parser = argparse.ArgumentParser(
+		description='📡 wrapper around httpie',
+		usage='📝 qiu -j payloadFile -m POST -po 5000 -pa books',
+	)
 	parser.add_argument("-j", "--json", help=".json for request", action='store')
 	parser.add_argument("-m", "--method", help="HTTP method", action='store')
 	parser.add_argument("-pa", "--path", help="path", action='store')
 	parser.add_argument("-po", "--port", help="port number", type=int, nargs='?', default=None)
 	if len(sys.argv) == 1:
-		print('whoops')
 		parser.print_help()
 		sys.exit()
 	return parser.parse_args()
