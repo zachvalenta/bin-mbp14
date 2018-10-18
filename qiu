@@ -16,7 +16,7 @@ import sys
 def parse_args():
 	parser = argparse.ArgumentParser(
 		description='📡 wrapper around httpie',
-		usage='📝 qiu -j payloadFile -m POST -po 5000 -pa books',
+		usage='📝 qiu -j payload.json -m POST -po 5000 -pa api/foo/',
 	)
 	parser.add_argument("-j", "--json", help=".json for request", action='store')
 	parser.add_argument("-m", "--method", help="HTTP method", action='store')
@@ -40,7 +40,7 @@ if args.path:
 
 # payload
 if args.json:
-	command = '{} @{}.json'.format(command, args.json)
+	command = '{} @{}'.format(command, args.json)
 
 # method
 if args.method:
