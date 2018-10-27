@@ -1,11 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/env bash
 
-import os
+# TODO: pick random from `accompaniment`
 
-# TODO: pick random from
-
-# notes
-os.system('open /Users/zach/Desktop/zvmac/notes/za/passions/viz/viz.md')
-
-# progress
-os.system('open /Users/zach/Desktop/zvmac/materials/za/passions/viz/#日志')
+open '/Users/zach/Desktop/zvmac/notes/za/passions/viz/viz.md'
+open '/Users/zach/Desktop/zvmac/materials/za/passions/viz/日志'

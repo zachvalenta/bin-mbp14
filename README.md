@@ -27,4 +27,4 @@
 - [ ] zsh + 艘 'FreeCodeCamp Medium style terminal'
 - [ ] `py-wiki` = Py version of [wikit](https://www.npmjs.com/package/wikit)
 - [ ] `nba-go` for Python
-- [ ] `pyp`: [other projects](https://github.com/reorx/project_sketch), add (coverage, Makefile, changelog, `setup.py`, license), CLI (`--min`, `--max`)
+- [ ] `pyp`: [other projects](https://github.com/reorx/project_sketch), add (coverage, Makefile, changelog, `setup.py`, license, `.editorconfig`), CLI (`--min`, `--max`)
