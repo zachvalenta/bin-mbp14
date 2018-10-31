@@ -1,26 +1,27 @@
 #!/usr/bin/env bash
 
 # TODO: move to `printf`
-# TODO: incorporate `diff`
+# TODO: add CLI help page
+# TODO: move to own repo
 
 # stage everything
-echo -en "$(tput setaf 5)STATUS$(tput sgr0)\n"
+echo -en "$(tput setaf 5)🚚  - STAGED FILES$(tput sgr0)\n"
 git add -A
 git status -s >&2
 
 # show some recent commtis for context
-echo -en "$(tput setaf 5)LOG$(tput sgr0)\n"
+echo -en "$(tput setaf 5)📝  - RECENT COMMITS$(tput sgr0)\n"
 git log --graph -n 3 --oneline --all --decorate >&2
 
-# punch in commit msg
-echo -en "$(tput setaf 5)MSG$(tput sgr0)\n --> "
+# take user input for commit msg
+echo -en "$(tput setaf 5)✏️  - COMMIT MSG$(tput sgr0)\n --> "
 read msg
 commit="$(git commit -m "$msg")"
 
 # display commit
-echo -en "$(tput setaf 5)COMMIT$(tput sgr0)\n"
+echo -en "$(tput setaf 5)✅  - COMMIT SUCCESSFUL!$(tput sgr0)\n"
 echo "${commit}"
 
 # push
-echo -en "$(tput setaf 5)PUSH$(tput sgr0)\n"
+echo -en "$(tput setaf 5)📡  - PUSHING CHANGES...$(tput sgr0)\n"
 git push
