@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO: move to `printf`
-# TODO: add CLI help page
-# TODO: move to own repo
-
 # stage everything
 echo -en "$(tput setaf 5)🚚  - STAGED FILES$(tput sgr0)\n"
 git add -A
