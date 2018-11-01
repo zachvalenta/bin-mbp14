@@ -6,7 +6,7 @@
 - `fne` ('file name editor'): CLI for file edits using argparse
 - `pyp` ('Python project'): create Python project boilerplate
 - `qing` ('清'): wrapper around `send2trash` ♻️
-- `qiu` ('求'): wrapper around httpie
+- `qiu` ('求'): wrapper around httpie meant for local development
 
 ## useful to me (only)
 
@@ -21,6 +21,7 @@
 
 ## TODO
 
+- [ ] `qiu`: move into own repo
 - [ ] `ding`
 
 * new line after each
