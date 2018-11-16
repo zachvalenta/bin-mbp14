@@ -10,30 +10,58 @@
 
 ## useful to me (only)
 
-- `dance`: setup - dance 💃🏼
+__daily workflow__
+
+- `jb` (进步): `git s` on `notes` dir
+- `js` (结束): end the day
+- `jz` (节奏): checkpoint to keep myself on track
+- `shui` (水): start the day
+
+__projects__
+
 - `flash`: setup - project on Flash Boys 🏦
-- `kcm` ('kill cmus'): cmus doesn't play well with Bluetooth and I frequently need to kill the process 😑
-- `music`: setup - dance 🎹
 - `suan` ('算'): setup - 'Grokking Algorithms'
+
+__hobbies__
+
+- `dance`: setup - dance 💃🏼
+- `music`: setup - dance 🎹
 - `viz`: setup - visual art ✒️
-- `wave`: setup - work cadence
+
+__misc__
+
+- `kcm` ('kill cmus'): cmus doesn't play well with Bluetooth and I frequently need to kill the process 😑
 - `yoga`: setup - yoga
+
 
 ## TODO
 
-- [ ] `qiu`: move into own repo
-- [ ] `ding`
+📍 move anything that could be a one-liner out of here and into an alias
 
-* new line after each
-* move to `printf`
-* add CLI help page
-* move to own repo, [laziestgit](https://github.com/jesseduffield/lazygit)
-* explain use cae - run after you check out `git diff`, have a commit msg in mind, and don't want to spend the extra 15 seconds; re often you commit, the more time you save (maybe a counter at the end listing time saved on this repo using ding)
-* asciicinema, neofetch
+### workflow
 
 - [ ] `dance`, `viz` to Bash
 - [ ] sym links
-- [ ] mirror music lib as text files https://facebook.github.io/watchman/
+
+### ding
+
+- [ ]  move to `printf`
+- [ ]  new line after each
+- [ ]  `-h` (like argparse)
+- [ ]  move to own repo, [laziestgit](https://github.com/jesseduffield/lazygit) --> "Note: This is a work in-progress. When you break it, let me know!"
+- [ ]  explain use cae - run after you check out `git diff`, have a commit msg in mind, and don't want to spend the extra 15 seconds; re often you commit, the more time you save (maybe a counter at the end listing time saved on this repo using ding)
+- [ ]  asciicinema, neofetch
+
+### fne
+
+- [ ] regex to kebab case
+- [ ] handle PDF (for language-learning audio files)
+
+### za
+
+- [ ] `kcm`: fix (also, why the sudden flakiness?)
+- [ ] `qiu`: move into own repo, cf. `4-testing.md`
+- [ ] music lib: mirror as text files https://facebook.github.io/watchman/ https://github.com/target/strelka
 - [ ] zsh + 艘 'FreeCodeCamp Medium style terminal'
 - [ ] `py-wiki` = Py version of [wikit](https://www.npmjs.com/package/wikit)
 - [ ] `nba-go` for Python

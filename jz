@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# TODO: open `sprint.md`
+
+open $HOME/Desktop/zvmac/notes/jay/goals/rhythm.md
+open $HOME/Desktop/zvmac/notes/jay/goals/arc.md
+cd "$HOME/Desktop/zvmac/notes"
+jb
