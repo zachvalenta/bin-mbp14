@@ -33,7 +33,6 @@ __misc__
 - `kcm` ('kill cmus'): cmus doesn't play well with Bluetooth and I frequently need to kill the process 😑
 - `yoga`: setup - yoga
 
-
 ## TODO
 
 📍 move anything that could be a one-liner out of here and into an alias
@@ -59,10 +58,12 @@ __misc__
 
 ### za
 
+
 - [ ] `kcm`: fix (also, why the sudden flakiness?)
 - [ ] `qiu`: move into own repo, cf. `4-testing.md`
+- [ ] dictionary pronunciation https://dictionaryapi.com/
 - [ ] music lib: mirror as text files https://facebook.github.io/watchman/ https://github.com/target/strelka
 - [ ] zsh + 艘 'FreeCodeCamp Medium style terminal'
 - [ ] `py-wiki` = Py version of [wikit](https://www.npmjs.com/package/wikit)
-- [ ] `nba-go` for Python
+- [ ] `nba-go` for Python https://github.com/swar/nba_api
 - [ ] `pyp`: [other projects](https://github.com/reorx/project_sketch), add (coverage, Makefile, changelog, `setup.py`, license, `.editorconfig`), CLI (`--min`, `--max`)

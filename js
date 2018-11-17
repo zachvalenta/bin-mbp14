@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO: open `sprint.md`
-
+open "$HOME/Desktop/zvmac/notes/jay/logs/2018/sprint.md"
 cd "$HOME/Desktop/zvmac/notes"
 jb
