@@ -2,11 +2,11 @@
 
 ## useful to you (maybe)
 
-- `ding` ('定'): wrapper around Git workflow
-- `fne` ('file name editor'): CLI for file edits using argparse
-- `pyp` ('Python project'): create Python project boilerplate
+- `ding` ('定'): wrapper around Git workflow 📦
+- `fne` ('file name editor'): CLI for file edits using argparse ✂️
+- `pyp` ('Python project'): create Python project boilerplate 🏭
 - `qing` ('清'): wrapper around `send2trash` ♻️
-- `qiu` ('求'): wrapper around httpie meant for local development
+- `qiu` ('求'): wrapper around httpie for local development 📦
 
 ## useful to me (only)
 
@@ -47,18 +47,20 @@ __misc__
 - [ ]  move to `printf`
 - [ ]  new line after each
 - [ ]  `-h` (like argparse)
+- [ ]  fix input glitch (cannot backspace, use normal Bash shortcuts)
 - [ ]  move to own repo, [laziestgit](https://github.com/jesseduffield/lazygit) --> "Note: This is a work in-progress. When you break it, let me know!"
 - [ ]  explain use cae - run after you check out `git diff`, have a commit msg in mind, and don't want to spend the extra 15 seconds; re often you commit, the more time you save (maybe a counter at the end listing time saved on this repo using ding)
 - [ ]  asciicinema, neofetch
 
 ### fne
 
-- [ ] regex to kebab case
-- [ ] handle PDF (for language-learning audio files)
+- [ ] regex - lowercase
+- [ ] regex - kebab case
+- [ ] file extension - PDF (for language-learning audio files)
 
 ### za
 
-
+- [ ] `pyp`: add - changelog, license
 - [ ] `kcm`: fix (also, why the sudden flakiness?)
 - [ ] `qiu`: move into own repo, cf. `4-testing.md`
 - [ ] dictionary pronunciation https://dictionaryapi.com/
