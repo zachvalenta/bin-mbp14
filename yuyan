@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+open "$HOME/Desktop/zvmac/notes/za/passions/yuyan/spanish.md"
+open "$HOME/Desktop/zvmac/materials/za/passions/yuyan/spanish"
