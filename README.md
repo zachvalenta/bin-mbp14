@@ -1,48 +1,50 @@
-# util scripts
+# OVERVIEW
 
-## useful to you (maybe)
+a congeries of Bash utils
 
-- `ding` ('定'): wrapper around Git workflow 📦
-- `fne` ('file name editor'): CLI for file edits using argparse ✂️
-- `pyp` ('Python project'): create Python project boilerplate 🏭
-- `qing` ('清'): wrapper around `send2trash` ♻️
-- `qiu` ('求'): wrapper around httpie for local development 📦
+# USEFUL TO YOU (MAYBE)
 
-## useful to me (only)
+* `ding` ('定'): wrapper around Git workflow 📦
+* `fne` ('file name editor'): CLI for file edits using argparse ✂️
+* `pyp` ('Python project'): create Python project boilerplate 🏭
+* `qing` ('清'): wrapper around `send2trash` ♻️
+* `qiu` ('求'): wrapper around httpie for local development 📦
+
+# USEFUL TO ME (ONLY)
 
 __daily workflow__
 
-- `jb` (进步): `git s` on `notes` dir
-- `js` (结束): end the day
-- `jz` (节奏): checkpoint to keep myself on track
-- `shui` (水): start the day
+* `shui` (水): start the day
+* `jb` (进步): `git s` on `notes` dir
+* `jz` (节奏): checkpoint to keep myself on track
+* `js` (结束): end the day
 
 __projects__
 
-- `flash`: setup - project on Flash Boys 🏦
-- `suan` ('算'): setup - 'Grokking Algorithms'
+* `flash`: setup - project on Flash Boys 🏦
+* `suan` ('算'): setup - 'Grokking Algorithms'
 
 __hobbies__
 
-- `dance`: setup - dance 💃🏼
-- `music`: setup - dance 🎹
-- `viz`: setup - visual art ✒️
+* `dance`: setup - dance 💃🏼
+* `music`: setup - dance 🎹
+* `viz`: setup - visual art ✒️
 
 __misc__
 
-- `kcm` ('kill cmus'): cmus doesn't play well with Bluetooth and I frequently need to kill the process 😑
-- `yoga`: setup - yoga
+* `kcm` ('kill cmus'): cmus doesn't play well with Bluetooth and I frequently need to kill the process 😑
+* `yoga`: setup - yoga
 
-## TODO
+# TODO
 
 📍 move anything that could be a one-liner out of here and into an alias
 
-### workflow
+## workflow
 
 - [ ] `dance`, `viz` to Bash
 - [ ] sym links
 
-### ding
+## ding
 
 - [ ]  move to `printf`
 - [ ]  new line after each
@@ -52,13 +54,13 @@ __misc__
 - [ ]  explain use cae - run after you check out `git diff`, have a commit msg in mind, and don't want to spend the extra 15 seconds; re often you commit, the more time you save (maybe a counter at the end listing time saved on this repo using ding)
 - [ ]  asciicinema, neofetch
 
-### fne
+## fne
 
 - [ ] regex - lowercase
 - [ ] regex - kebab case
 - [ ] file extension - PDF (for language-learning audio files)
 
-### za
+## za
 
 - [ ] `pyp`: add - changelog, license
 - [ ] `kcm`: fix (also, why the sudden flakiness?)
