@@ -2,5 +2,5 @@
 
 # TODO: pick random from `accompaniment`
 
-open '/Users/zach/Desktop/zvmac/notes/za/passions/viz/viz.md'
-open '/Users/zach/Desktop/zvmac/materials/za/passions/viz/日志'
+open "$HOME/Desktop/zvmac/notes/za/passions/viz/viz.md"
+open "$HOME/Desktop/zvmac/materials/za/passions/viz/output/2018.11-sketchnote"
