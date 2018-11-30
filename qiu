@@ -6,8 +6,6 @@ qiu = wrapper around httpie
 httpie version: 0.9.9
 """
 
-# TODO: port as required arg
-
 import argparse
 import os
 import sys
@@ -31,7 +29,7 @@ def parse_args():
 # take args
 args = parse_args()
 
-# base command
+# base URL
 command = 'http://127.0.0.1:{}'.format(args.port)
 
 # path
@@ -49,5 +47,5 @@ if args.method:
 # add command
 command = 'http {}'.format(command)
 
-# req
+# make req
 os.system(command)

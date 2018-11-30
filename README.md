@@ -62,6 +62,7 @@ __misc__
 
 ## za
 
+- [ ] `qiu`: set port/path in env var
 - [ ] `pyp`: add - changelog, license
 - [ ] `kcm`: `psutil`? -> `monitoring.md`
 - [ ] `qiu`: move into own repo, cf. `4-testing.md`
