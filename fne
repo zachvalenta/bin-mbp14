@@ -3,15 +3,14 @@
 """
 fne = file name editor
 
-TODO
-lowecase and kebab case (cf. 'regex' in `algos.md`)
-switch statement https://www.youtube.com/watch?v=gllUwQnYVww
-colored text -> https://pypi.org/project/coloramai/
-fix `+".mp3"` hack (regex? https://pyformat.info/?)
-deal w/ '.mp4' extensions
-add lowercase option, https://app.pluralsight.com/library/courses/node-js-building-command-line-app/table-of-contents
-how do `nargs` really work? -> https://stackoverflow.com/questions/15301147/python-argparse-default-value-or-specified-value
-类似 `fne.py`: [vimv](https://github.com/thameera/vimv) [renamer](https://www.npmjs.com/package/renamer) [moreutils](https://news.ycombinator.com/item?id=13890944)
+TODO lowecase and kebab case (cf. 'regex' in `algos.md`)
+TODO switch statement https://www.youtube.com/watch?v=gllUwQnYVww
+TODO colored text -> https://pypi.org/project/coloramai/
+TODO fix `+".mp3"` hack (regex? https://pyformat.info/?)
+TODO deal w/ '.mp4' extensions
+TODO add lowercase option, https://app.pluralsight.com/library/courses/node-js-building-command-line-app/table-of-contents
+TODO 研究 how do `nargs` really work? -> https://stackoverflow.com/questions/15301147/python-argparse-default-value-or-specified-value
+TODO 研究 `fne.py`: [vimv](https://github.com/thameera/vimv) [renamer](https://www.npmjs.com/package/renamer) [moreutils](https://news.ycombinator.com/item?id=13890944)
 """
 
 import argparse
