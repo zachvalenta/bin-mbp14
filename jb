@@ -3,10 +3,8 @@
 # TODO: time since last commit
 
 cd "$HOME/Desktop/zvmac/notes"
-
-files_touched="$(git s | wc -l)"
-echo "files touched: ${files_touched}"
-
 git s
-
-# TODO: "diff? y/n"
+files_touched="$(git s | wc -l)"
+echo -en "\n"
+echo "files touched: ${files_touched}"
+echo -en "\n"

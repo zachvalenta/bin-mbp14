@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 open "$HOME/Desktop/zvmac/notes/jay/goals/arc.md"
+open "$HOME/Desktop/zvmac/notes/jay/logs/2018/month.md"
 open "$HOME/Desktop/zvmac/notes/jay/goals/i-am.md"
 open "$HOME/Desktop/zvmac/notes/jay/goals/i-can.md"
 open "$HOME/Desktop/zvmac/notes/jay/goals/water.md"
+open "$HOME/Desktop/zvmac/notes/jay/goals/rhythm.md"
