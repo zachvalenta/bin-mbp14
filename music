@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO open playlists in VLC https://www.maketecheasier.com/mastering-vlc-via-the-command-line-linux/
-# /Applications/VLC.app/Contents/MacOS -> ./VLC -> VLC media player 3.0.3 Vetinari (revision 3.0.3-1-0-gc2bb759264)
-
 open $HOME/Desktop/zvmac/materials/za/passions/music
 open $HOME/Desktop/zvmac/notes/za/passions/music/ableton.md
 open $HOME/Desktop/zvmac/notes/za/passions/music/composition.md
