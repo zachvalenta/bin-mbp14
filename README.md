@@ -51,8 +51,6 @@ __misc__
 - [ ]  `-h` (like argparse)
 - [ ]  fix input glitch (cannot backspace, use normal Bash shortcuts)
 - [ ]  move to own repo, [laziestgit](https://github.com/jesseduffield/lazygit) --> "Note: This is a work in-progress. When you break it, let me know!"
-- [ ]  explain use cae - run after you check out `git diff`, have a commit msg in mind, and don't want to spend the extra 15 seconds; re often you commit, the more time you save (maybe a counter at the end listing time saved on this repo using ding)
-- [ ]  asciicinema, neofetch
 
 ## fne
 
