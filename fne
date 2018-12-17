@@ -3,6 +3,7 @@
 """
 fne = file name editor
 
+TODO 'r' to redo args
 TODO lowecase and kebab case (cf. 'regex' in `algos.md`)
 TODO switch statement https://www.youtube.com/watch?v=gllUwQnYVww
 TODO colored text -> https://pypi.org/project/coloramai/

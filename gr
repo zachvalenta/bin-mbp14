@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import os
+
+
+def reset():
+	user_confirmation = input("sure you want to reset? (RETURN to execute ||| 'q' to quit) ")
+	if user_confirmation == "":
+		os.system('git reset --hard HEAD')
+		print('reset to HEAD')
+	else:
+		print('reset rejected')
+
+
+reset()
