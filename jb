@@ -4,7 +4,10 @@
 
 cd "$HOME/Desktop/zvmac/notes"
 git s
+echo -en "\n"
+
 files_touched="$(git s | wc -l)"
-echo -en "\n"
 echo "files touched: ${files_touched}"
-echo -en "\n"
+
+time_since_last_commit="$(git rev-parse HEAD | git show -s --format=%cr)"
+echo "time since last commit: ${time_since_last_commit}"
