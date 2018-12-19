@@ -18,6 +18,8 @@ import argparse
 import os
 import sys
 
+last_3_chars = slice(-3, None, None)
+
 
 def print_names(names, msg):
     print("{:*^30s}".format(msg))
@@ -53,10 +55,9 @@ def execute_edits():
 args = parse_args()
 
 # store file names
-orig_names = [x for x in os.listdir('.') if x[-3:] == "mp3" and os.path.isfile(x)]
+orig_names = [x for x in os.listdir('.') if x[last_3_chars] == "mp3" and os.path.isfile(x)]
 print_names(orig_names, "original names")
 new_names = list()
-last_3_chars = slice(-3, None, None)
 
 # --default
 if args.default:
@@ -64,7 +65,7 @@ if args.default:
 # --end
 elif args.end:
     args.end = -args.end
-    new_names = [x[args.start:args.end - 4] + ".mp3" for x in os.listdir('.') if x[-3:] == "mp3" and os.path.isfile(x)]
+    new_names = [x[args.start:args.end - 4] + ".mp3" for x in os.listdir('.') if x[last_3_chars] == "mp3" and os.path.isfile(x)]
 # --start
 else:
     new_names = [x[args.start:] for x in os.listdir('.') if x[last_3_chars] == "mp3" and os.path.isfile(x)]
