@@ -4,11 +4,8 @@ a congeries of Bash utils
 
 # USEFUL TO YOU (MAYBE)
 
-* `ding` ('定'): wrapper around Git workflow 📦
 * `fne` ('file name editor'): CLI for file edits using argparse ✂️
-* `pyp` ('Python project'): create Python project boilerplate 🏭
 * `qing` ('清'): wrapper around `send2trash` ♻️
-* `qiu` ('求'): wrapper around httpie for local development 📦
 
 # USEFUL TO ME (ONLY)
 
