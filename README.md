@@ -47,23 +47,22 @@ __misc__
 - [ ]  new line after each
 - [ ]  `-h` (like argparse)
 - [ ]  fix input glitch (cannot backspace, use normal Bash shortcuts)
-- [ ]  move to own repo, [laziestgit](https://github.com/jesseduffield/lazygit) --> "Note: This is a work in-progress. When you break it, let me know!"
+- [ ]  move to own repo, [laziestgit](https://github.com/jesseduffield/lazygit) --> "n.b.: This is a work in-progress. When you break it, let me know!"
 
 ## fne
 
+- [ ] actually allow re-doing args
+- [ ] file extension - if no flag, assume `.mp3`, optional args for `.mp4` and `.pdf` (for language-learning audio files)
+- [ ] Pathlib's `.extension()` http://blog.danwin.com/using-python-3-pathlib-for-managing-filenames-and-directories/
 - [ ] regex - lowercase
 - [ ] regex - kebab case
-- [ ] file extension - PDF (for language-learning audio files)
 
 ## za
 
-- [ ] `qiu`: set port/path in env var
-- [ ] `pyp`: add - changelog, license
+- [ ] `qiu`: defaults for port/path
 - [ ] `kcm`: `psutil`? -> `monitoring.md`
-- [ ] `qiu`: move into own repo, cf. `4-testing.md`
-- [ ] dictionary pronunciation https://dictionaryapi.com/
+- [ ] dictionary pronunciation CLI https://dictionaryapi.com/
 - [ ] music lib: mirror as text files https://facebook.github.io/watchman/ https://github.com/target/strelka
 - [ ] zsh + 艘 'FreeCodeCamp Medium style terminal'
 - [ ] `py-wiki` = Py version of [wikit](https://www.npmjs.com/package/wikit)
 - [ ] `nba-go` for Python https://github.com/swar/nba_api + https://github.com/toddwschneider/ballr
-- [ ] `pyp`: [other projects](https://github.com/reorx/project_sketch), add (coverage, Makefile, changelog, `setup.py`, license, `.editorconfig`), CLI (`--min`, `--max`)
