@@ -11,8 +11,10 @@ echo -en "$(tput setaf 5)UPDATED$(tput sgr0)\n\n${updated}\n\n"
 deleted="$(git ls-files --deleted)"
 echo -en "$(tput setaf 1)DELETED$(tput sgr0)\n\n${deleted}\n\n"
 
-untracked="$(git ls-files --others --exclude-standard)"
-echo -en "$(tput setaf 6)UNTRACKED$(tput sgr0)\n\n${untracked}\n\n"
+added="$(git ls-files --others --exclude-standard)"
+if [ -n "$added" ]; then
+    echo -en "$(tput setaf 6)ADDED$(tput sgr0)\n\n${added}\n\n"
+fi
 
 echo -en "-----------------------------------\n\n"
 
