@@ -5,7 +5,7 @@
 cd "$HOME/Desktop/zvmac/notes"
 echo -en "\n"
 
-updated="$(git ls-files -m)"
+updated="$(git diff --stat)"
 echo -en "$(tput setaf 5)UPDATED$(tput sgr0)\n\n${updated}\n\n"
 
 deleted="$(git ls-files --deleted)"
