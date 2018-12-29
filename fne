@@ -3,6 +3,7 @@
 """
 fne = file name editor
 
+TODO use pathlib - https://treyhunner.com/2018/12/why-you-should-be-using-pathlib/
 TODO 'r' to redo args
 TODO lowecase and kebab case (cf. 'regex' in `algos.md`)
 TODO switch statement https://www.youtube.com/watch?v=gllUwQnYVww

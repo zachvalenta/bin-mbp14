@@ -3,11 +3,21 @@
 # TODO: time since last commit
 
 cd "$HOME/Desktop/zvmac/notes"
-git s
 echo -en "\n"
 
-files_touched="$(git s | wc -l)"
-echo "files touched: ${files_touched}"
+updated="$(git ls-files -m)"
+echo -en "$(tput setaf 5)UPDATED$(tput sgr0)\n\n${updated}\n\n"
+
+deleted="$(git ls-files --deleted)"
+echo -en "$(tput setaf 1)DELETED$(tput sgr0)\n\n${deleted}\n\n"
+
+untracked="$(git ls-files --others --exclude-standard)"
+echo -en "$(tput setaf 6)UNTRACKED$(tput sgr0)\n\n${untracked}\n\n"
+
+echo -en "-----------------------------------\n\n"
+
+total_files_touched="$(git s | wc -l)"
+echo "total files touched: ${total_files_touched}"
 
 time_since_last_commit="$(git rev-parse HEAD | git show -s --format=%cr)"
-echo "time since last commit: ${time_since_last_commit}"
+echo -en "time since last commit:    ${time_since_last_commit}\n\n"

@@ -34,20 +34,16 @@ __misc__
 
 # TODO
 
-📍 move anything that could be a one-liner out of here and into an alias
-
-## workflow
-
-- [ ] `dance`, `viz` to Bash
-- [ ] sym links
+* `jb`: add `git show --stat --oneline` for updates
 
 ## ding
 
-- [ ]  move to `printf`
-- [ ]  new line after each
-- [ ]  `-h` (like argparse)
-- [ ]  fix input glitch (cannot backspace, use normal Bash shortcuts)
-- [ ]  move to own repo, [laziestgit](https://github.com/jesseduffield/lazygit) --> "n.b.: This is a work in-progress. When you break it, let me know!"
+- [ ] bug - normal Bash navigational shortcuts fail during commit msg input
+- [ ] move to `printf`
+- [ ] new line after each
+- [ ] `-h` (like argparse)
+- [ ] fix input glitch (cannot backspace, use normal Bash shortcuts)
+- [ ] move to own repo, [laziestgit](https://github.com/jesseduffield/lazygit) --> "n.b.: This is a work in-progress. When you break it, let me know!"
 
 ## fne
 
@@ -60,9 +56,7 @@ __misc__
 ## za
 
 - [ ] `qiu`: defaults for port/path
-- [ ] `kcm`: `psutil`? -> `monitoring.md`
-- [ ] dictionary pronunciation CLI https://dictionaryapi.com/
-- [ ] music lib: mirror as text files https://facebook.github.io/watchman/ https://github.com/target/strelka
-- [ ] zsh + 艘 'FreeCodeCamp Medium style terminal'
-- [ ] `py-wiki` = Py version of [wikit](https://www.npmjs.com/package/wikit)
-- [ ] `nba-go` for Python https://github.com/swar/nba_api + https://github.com/toddwschneider/ballr
+- [ ] `music-lib`: mirror as text files https://facebook.github.io/watchman/ https://github.com/target/strelka
+- [ ] `kcm`: `psutil`?
+- [ ] dictionary pronunciation CLI https://dictionaryapi.com/info/faq-audio-image#collegiate
+- [ ] `py-wiki`: Py version of [wikit](https://www.npmjs.com/package/wikit)
