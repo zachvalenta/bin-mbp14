@@ -6,10 +6,14 @@ cd "$HOME/Desktop/zvmac/notes"
 echo -en "\n"
 
 updated="$(git diff --stat)"
-echo -en "$(tput setaf 5)UPDATED$(tput sgr0)\n\n${updated}\n\n"
+if [ -n "$updated" ]; then
+    echo -en "$(tput setaf 5)UPDATED$(tput sgr0)\n\n${updated}\n\n"
+fi
 
-deleted="$(git ls-files --deleted)"
-echo -en "$(tput setaf 1)DELETED$(tput sgr0)\n\n${deleted}\n\n"
+deleted_or_moved="$(git ls-files --deleted)"
+if [ -n "$deleted_or_moved" ]; then
+    echo -en "$(tput setaf 1)DELETED / MOVED$(tput sgr0)\n\n${deleted_or_moved}\n\n"
+fi
 
 added="$(git ls-files --others --exclude-standard)"
 if [ -n "$added" ]; then
