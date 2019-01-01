@@ -5,7 +5,7 @@
 cd "$HOME/Desktop/zvmac/notes"
 echo -en "\n"
 
-updated="$(git diff --stat)"
+updated="$(git diff --stat-width=75)"
 if [ -n "$updated" ]; then
     echo -en "$(tput setaf 5)UPDATED$(tput sgr0)\n\n${updated}\n\n"
 fi
