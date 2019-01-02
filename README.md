@@ -34,8 +34,6 @@ __misc__
 
 # TODO
 
-* `jb`: add `git show --stat --oneline` for updates
-
 ## ding
 
 - [ ] bug - normal Bash navigational shortcuts fail during commit msg input
@@ -55,8 +53,9 @@ __misc__
 
 ## za
 
-- [ ] `qiu`: defaults for port/path
 - [ ] `music-lib`: mirror as text files https://facebook.github.io/watchman/ https://github.com/target/strelka
+- [ ] `mkd` but for cd into repo immediately after `git clone`
+- [ ] `qiu`: defaults for port/path
 - [ ] `kcm`: `psutil`?
 - [ ] dictionary pronunciation CLI https://dictionaryapi.com/info/faq-audio-image#collegiate
 - [ ] `py-wiki`: Py version of [wikit](https://www.npmjs.com/package/wikit)

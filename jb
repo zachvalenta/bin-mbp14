@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO: time since last commit
-
 cd "$HOME/Desktop/zvmac/notes"
 echo -en "\n"
 
