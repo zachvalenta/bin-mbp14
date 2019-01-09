@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-charm $HOME/Desktop/zvmac/materials/sw/za/algos/impl
-open $HOME/Desktop/zvmac/materials/sw/za/algos/grokking-algos.pdf
-open $HOME/Desktop/zvmac/notes/sw/lang/python/python.md
-open $HOME/Desktop/zvmac/notes/sw/za/za/algos.md
+charm "$HOME/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos"
+open "$HOME/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos.pdf"
+open "$HOME/Desktop/zvmac/notes/sw/lang/python/python.md"
+open "$HOME/Desktop/zvmac/notes/sw/za/cs/algos.md"
