@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+file_name=$1
+md=".md"
+query="$file_name$md"
+jb | grep "$query"
