@@ -34,12 +34,10 @@ __misc__
 
 # TODO
 
-* like `jb` but lines of files
 * _monthly_: script to tally + charts w/ [dataset](https://dataset.readthedocs.io/en/latest/index.html) and [termgraph](https://github.com/mkaz/termgraph)
-* `pyp`: import error when try to run tests
 * `qiu`: fix bug w/ `argparse`; can only do `?k1=v1`, not `?k1=v1&k2=v2`
 * `jb`: fix overlap btw 'deleted' and 'added'
-* `bash_profile.pysave`
+* `bash_profile.pysave`?
 * clean `.bash_profile`
 
 ## ding
@@ -61,7 +59,6 @@ __misc__
 
 ## za
 
-- [ ] `music-lib`: mirror as text files https://facebook.github.io/watchman/ https://github.com/target/strelka
 - [ ] script for month end tally
 - [ ] `mkd` but for cd into repo immediately after `git clone`
 - [ ] `qiu`: defaults for port/path
