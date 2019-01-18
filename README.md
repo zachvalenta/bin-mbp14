@@ -57,6 +57,10 @@ __misc__
 - [ ] regex - lowercase
 - [ ] regex - kebab case
 
+## jb
+
+- [ ] filter out anything that hasn't changed by more than 50 lines
+
 ## za
 
 - [ ] script for month end tally
