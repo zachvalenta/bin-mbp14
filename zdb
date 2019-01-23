@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+grep --color=auto -B 2 -A 37 'PROBLEM SOLVING' ~/Desktop/zvmac/notes/sw/za/cs/sw.md
