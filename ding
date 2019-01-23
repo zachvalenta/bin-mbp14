@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO `gitlax` make separate repo
-
 # stage everything
 echo -en "\n"
 echo -en "$(tput setaf 5)🚚  - STAGED FILES$(tput sgr0)\n"
