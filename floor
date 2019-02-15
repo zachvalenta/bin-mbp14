@@ -3,4 +3,4 @@
 open "$HOME/Desktop/zvmac/materials/za/passions/dance/floor"
 open "$HOME/Desktop/zvmac/notes/za/passions/dance/floor.md"
 open "$HOME/Desktop/zvmac/materials/za/passions/dance/floor/soraya.png"
-/Applications/VLC.app/Contents/MacOS/VLC -Z "$HOME/Desktop/zvmac/materials/za/passions/dance/floor/input-music"
+/Applications/VLC.app/Contents/MacOS/VLC -Z "$HOME/Desktop/zvmac/materials/za/passions/dance/floor/input"
