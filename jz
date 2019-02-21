@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-open "$HOME/Desktop/zvmac/notes/jay/logs/2019/month.md"
-open "$HOME/Desktop/zvmac/notes/jay/logs/2019/rn.md"
-jb
