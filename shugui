@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-cd "$HOME/Desktop/zvmac/notes"
-OUTPUT="$(find . -name _bookshelf.md)"
-echo "$OUTPUT"
-# open "$OUTPUT"
-
