@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-charm "$HOME/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos"
-open "$HOME/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos.pdf"
