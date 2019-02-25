@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-grep --color=auto -A 15 destinos "$HOME/Desktop/zvmac/notes/jay/goals/process.md"
+grep --color=auto -A 17 destinos "$HOME/Desktop/zvmac/notes/jay/goals/process.md"
