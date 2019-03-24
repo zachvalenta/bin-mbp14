@@ -51,6 +51,7 @@ __misc__
 
 ## fne
 
+- [ ] https://realpython.com/python-gui-with-wxpython/
 - [ ] actually allow re-doing args
 - [ ] file extension - if no flag, assume `.mp3`, optional args for `.mp4` and `.pdf` (for language-learning audio files)
 - [ ] Pathlib's `.extension()` http://blog.danwin.com/using-python-3-pathlib-for-managing-filenames-and-directories/

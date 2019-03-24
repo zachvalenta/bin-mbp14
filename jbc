@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
+cd "$HOME/Desktop/zvmac/notes"
+echo -en "\n"
 file_name=$1
 md=".md"
 query="$file_name$md"
-jb | grep "$query"
+find . -name "$query" | xargs git diff
+echo -en "\n"
