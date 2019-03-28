@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo -en "\n"
+grep -i --color=auto -A 15 'profile' "$HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+echo -en "\n"
