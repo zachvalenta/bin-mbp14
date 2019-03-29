@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 echo -en "\n"
-grep --color=auto -A 31 destinos "$HOME/Desktop/zvmac/notes/jay/goals/process.md"
+grep --color=auto -A 31 destinos "$HOME/Desktop/zvmac/notes/jay/goals/process.md" | bat -l markdown

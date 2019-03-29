@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 echo -en "\n"
-grep -i --color=auto -A 15 'profile' "$HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+grep -i -A 10 'profile' "$HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md" | bat -l markdown
 echo -en "\n"
