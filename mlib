@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import os
+
+
+with open("/Users/zach/Desktop/test-mlib.md", "w") as record:
+    for root, dirs, files in os.walk("/Users/zach/Desktop/johnny-jewel"):
+        for name in files:
+            print(os.path.join(root, name))
+            # record.write(os.path.join(root, name))
+        for name in dirs:
+            print(os.path.join(root, name))
+            # record.write(os.path.join(root, name))
