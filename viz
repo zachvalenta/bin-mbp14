@@ -3,10 +3,11 @@
 import os
 import random
 
-os.chdir('/Users/zach/Desktop/zvmac/materials/za/passions/viz/input')
+# open random pic
+os.chdir('/Users/zach/Desktop/zvmac/materials/za/passions/viz/lessons')
 pics = [x for x in os.listdir('.') if x[-3:] in ('jpg', 'png')]
 pic_to_open = random.choice(pics)
-
 os.system('open {}'.format(pic_to_open))
-os.system('open /Users/zach/Desktop/zvmac/materials/za/passions/viz/output/sketchnote')
+
+# open note
 os.system('open /Users/zach/Desktop/zvmac/notes/za/passions/viz/viz.md')
