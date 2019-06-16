@@ -11,3 +11,4 @@ os.system('open {}'.format(pic_to_open))
 
 # open note
 os.system('open /Users/zach/Desktop/zvmac/notes/za/passions/viz/viz.md')
+os.system('/Users/zach/Desktop/zvmac/materials/za/passions/viz/lessons')
