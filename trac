@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cd /Users/zach/Desktop/zvmac/notes/jay/logs/2019/07
+dance=$(grep dance 2019.07-tracking.md | awk '{print $3}')
+echo "dance $dance"
+music=$(grep music 2019.07-tracking.md | awk '{print $3}')
+echo "dance $music"
+viz=$(grep viz 2019.07-tracking.md | awk '{print $3}')
+echo "viz $viz"
