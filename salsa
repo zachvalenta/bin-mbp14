@@ -2,4 +2,4 @@
 
 open "$HOME/Desktop/zvmac/materials/za/passions/dance/salsa/lessons"
 open "$HOME/Desktop/zvmac/notes/za/passions/dance/salsa.md"
-# /Applications/VLC.app/Contents/MacOS/VLC -Z "$HOME/Desktop/zvmac/materials/za/passions/dance/salsa/music"
+/Applications/VLC.app/Contents/MacOS/VLC -Z "$HOME/Desktop/zvmac/materials/za/passions/dance/salsa/music"
