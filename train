@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-cd $HOME/Desktop/zvmac/materials/jay/training; open .; open "za/demar.png"
-open $HOME/Desktop/zvmac/notes/jay/za/training.md
