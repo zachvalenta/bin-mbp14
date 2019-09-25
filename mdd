@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 echo -en "\n"
-grep --color=auto -A 7 schedule "$HOME/Desktop/zvmac/notes/jay/za/process.md" | bat -l markdown
+grep --color=auto -A 6 -B 1 schedule "$HOME/Desktop/zvmac/notes/jay/za/process.md" | bat -l markdown
