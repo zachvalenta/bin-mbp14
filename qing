@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
 """
-qing = alternative to rm
-
-send2trash version: 1.5.0
+another alternative to rm
+bc other options are npm based https://github.com/sindresorhus/trash
 """
 
 import sys

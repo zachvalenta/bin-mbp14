@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 echo -en "\n"
-grep --color=auto -A 13 sgz "$HOME/Desktop/zvmac/notes/za/non-fiction/za/cogsci.md" | bat -l markdown
+grep --color=auto -A 10 sgz "$HOME/Desktop/zvmac/notes/za/non-fiction/za/cogsci.md" | bat -l markdown
