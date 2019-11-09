@@ -1,0 +1,5 @@
+* Git utilities: combine add/commit for single file (`di`) all files (`ding`) one command hard resets (`gr`) diff stats for my notes (`jb`)
+* file name editor (`fne`)
+* Markdown-to-HTML converter using [water.css](https://github.com/kognise/water.css) (`m2h`)
+* safer alternative to `rm` (`qing`)
+* `httpie` wrapper for local development (`qiu`)
