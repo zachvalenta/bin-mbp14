@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-open "$HOME/Desktop/zvmac/materials/za/passions/dance/floor"
-open "$HOME/Desktop/zvmac/notes/za/passions/dance/floor.md"
-open "$HOME/Desktop/zvmac/materials/za/passions/dance/floor/soraya.png"
