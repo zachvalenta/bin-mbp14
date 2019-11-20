@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 echo -en "\n"
-grep --color=auto -A 12 sgz "$HOME/Desktop/zvmac/notes/za/non-fiction/za/cogsci.md" | bat -l markdown
+grep --color=auto -A 7 sgz "$HOME/Desktop/zvmac/notes/za/non-fiction/za/cogsci.md" | bat -l markdown
+grep --color=auto -A 12 '# 2019' "$HOME/Desktop/zvmac/notes/jay/logs/2019/2019-year.md" | bat -l markdown
