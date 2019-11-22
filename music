@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-open $HOME/Desktop/zvmac/materials/za/passions/music
-open $HOME/Desktop/zvmac/materials/za/passions/music/lessons/mac.png
-open $HOME/Desktop/zvmac/notes/za/passions/music/ableton.md
-open $HOME/Desktop/zvmac/notes/za/passions/music/composition.md
