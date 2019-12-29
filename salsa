@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-open "$HOME/Desktop/zvmac/materials/za/passions/dance/salsa"
-/Applications/VLC.app/Contents/MacOS/VLC -Z "$HOME/Desktop/zvmac/materials/za/passions/dance/salsa/music"
