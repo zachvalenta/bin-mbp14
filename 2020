@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo -en "\n"
-grep --color=auto -A 18 year "$HOME/Desktop/zvmac/notes/jay/logs/2020/2020-year.md" | bat -l markdown
+grep --color=auto -A 16 year "$HOME/Desktop/zvmac/notes/jay/logs/2020/2020-year.md" | bat -l markdown
 
 echo -en "\n"
-grep --color=auto -A 18 winter "$HOME/Desktop/zvmac/notes/jay/logs/2020/2020-year.md" | bat -l markdown
+grep --color=auto -A 16 winter "$HOME/Desktop/zvmac/notes/jay/logs/2020/2020-year.md" | bat -l markdown

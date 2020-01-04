@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-echo -en "\n"
-grep --color=auto -A 28 shui "$HOME/Desktop/zvmac/notes/jay/za/channel.md" | bat -l markdown
