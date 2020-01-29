@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-# https://stackabuse.com/introduction-to-the-python-calendar-module/
-curl -sf 'http://api.openweathermap.org/data/2.5/weather?q=barcelona,es&units=metric&APPID=a596b929a05e449c180614ccf808836f' | jq '.main .temp_max'
