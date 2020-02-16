@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-# add file
-file=$1
-git add "$file"
+# stage everything
+echo -en "\n"
+echo -en "$(tput setaf 5)🚚  - STAGED FILES$(tput sgr0)\n"
+echo -en "\n"
+git add -A
 git status -s >&2
 
 # show some recent commtis for context
