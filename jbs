@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# order asc
+cd "$HOME/Desktop/zvmac/notes"
+echo -en "\n"
+
+deleted_or_moved="$(git ls-files --deleted)"
+if [ -n "$deleted_or_moved" ]; then
+    echo -en "$(tput setaf 1)DELETED / MOVED$(tput sgr0)\n\n${deleted_or_moved}\n\n"
+fi
+
+added="$(git ls-files --others --exclude-standard)"
+if [ -n "$added" ]; then
+    echo -en "$(tput setaf 6)ADDED$(tput sgr0)\n\n${added}\n\n"
+fi
+
+updated="$(git diff --stat-width=75 master..sprint)"
+if [ -n "$updated" ]; then
+    echo -en "$(tput setaf 5)UPDATED$(tput sgr0)\n\n${updated}\n\n"
+fi
+
+echo -en "-----------------------------------\n\n"
+
+total_files_touched="$(git s | wc -l)"
+echo "total files touched: ${total_files_touched}"
+
+time_since_last_commit="$(git rev-parse HEAD | git show -s --format=%cr)"
+echo -en "time since last commit:    ${time_since_last_commit}\n\n"
