@@ -4,7 +4,7 @@ import os
 import random
 
 # open random pic
-os.chdir('/Users/zach/Desktop/zvmac/materials/za/passions/viz/lessons')
+os.chdir('/Users/zach/Desktop/zvmac/materials/za/passions/viz')
 pics = [x for x in os.listdir('.') if x[-3:] in ('jpg', 'png')]
 pic_to_open = random.choice(pics)
 os.system('open {}'.format(pic_to_open))
