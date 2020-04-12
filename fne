@@ -1,19 +1,5 @@
 #!/usr/bin/env python3
 
-"""
-use Vim instead
-TODO use pathlib - https://treyhunner.com/2018/12/why-you-should-be-using-pathlib/
-TODO 'r' to redo args
-TODO lowecase and kebab case (cf. 'regex' in `algos.md`)
-TODO switch statement https://www.youtube.com/watch?v=gllUwQnYVww
-TODO colored text -> https://pypi.org/project/coloramai/
-TODO fix `+".mp3"` hack (regex? https://pyformat.info/?)
-TODO deal w/ '.mp4' extensions
-TODO add lowercase option, https://app.pluralsight.com/library/courses/node-js-building-command-line-app/table-of-contents
-TODO 研究 how do `nargs` really work? -> https://stackoverflow.com/questions/15301147/python-argparse-default-value-or-specified-value
-TODO 研究 `fne.py`: [vimv](https://github.com/thameera/vimv) [renamer](https://www.npmjs.com/package/renamer) [moreutils](https://news.ycombinator.com/item?id=13890944)
-"""
-
 import argparse
 import os
 import sys
