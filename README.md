@@ -12,7 +12,9 @@ __Git-related__
 
 __everything else__
 
-* `fne`: file name editor
+* `fne`: file name editor (specifically for bulk updates on audio files downloaded using `youtube-dl`)
+* `vimv`: file name editor (for general purpose editing; [project link](https://github.com/ivanmaeder/vimv))
+* `kcm`: 'kill cmus'; [cmus is awesome](https://github.com/cmus/cmus) but sometimes gets stuck; this hunts down the process by name and kills it
 * `m2h`: Markdown-to-HTML converter using [water.css](https://github.com/kognise/water.css)
 * `qing`: safe alternative to `rm`
 * `qiu`: wraps `httpie` for local dev
