@@ -41,20 +41,20 @@ def execute_edits():
 args = parse_args()
 
 # store file names
-orig_names = [x for x in os.listdir('.') if x[last_3_chars] == "mp3" and os.path.isfile(x)]
+orig_names = [x for x in os.listdir('.') if x[last_3_chars] == "m4a" and os.path.isfile(x)]
 print_names(orig_names, "original names")
 new_names = list()
 
 # --default
 if args.default:
-    new_names = [x[:-16] + ".mp3" for x in os.listdir('.') if x[last_3_chars] == "mp3" and os.path.isfile(x)]
+    new_names = [x[:-16] + ".m4a" for x in os.listdir('.') if x[last_3_chars] == "m4a" and os.path.isfile(x)]
 # --end
 elif args.end:
     args.end = -args.end
-    new_names = [x[args.start:args.end - 4] + ".mp3" for x in os.listdir('.') if x[last_3_chars] == "mp3" and os.path.isfile(x)]
+    new_names = [x[args.start:args.end - 4] + ".m4a" for x in os.listdir('.') if x[last_3_chars] == "m4a" and os.path.isfile(x)]
 # --start
 else:
-    new_names = [x[args.start:] for x in os.listdir('.') if x[last_3_chars] == "mp3" and os.path.isfile(x)]
+    new_names = [x[args.start:] for x in os.listdir('.') if x[last_3_chars] == "m4a" and os.path.isfile(x)]
 
 print_names(new_names, "updated names")
 
