@@ -1,28 +1,44 @@
 #!/usr/bin/env bash
 
-# order asc
 cd "$HOME/Desktop/zvmac/notes"
 echo -en "\n"
 
-deleted_or_moved="$(git ls-files --deleted)"
-if [ -n "$deleted_or_moved" ]; then
-    echo -en "$(tput setaf 1)DELETED / MOVED$(tput sgr0)\n\n${deleted_or_moved}\n\n"
+# RM / MV
+mvrm="$(git ls-files --deleted)"
+mvrm_bg="orangered"
+mvrm_fg="$(pastel textcolor "$mvrm_bg")"
+if [ -n "$mvrm" ]; then
+    # echo -en "$(tput setaf 1)DELETED / MOVED$(tput sgr0)\n\n${deleted_or_moved}\n\n"
+    pastel paint "$mvrm_fg" --on "$mvrm_bg" " moved / removed "
+    echo -en "\n${mvrm}\n\n"
 fi
 
+# ADDED
 added="$(git ls-files --others --exclude-standard)"
+added_bg="lawngreen"
+added_fg="$(pastel textcolor "$added_bg")"
+
 if [ -n "$added" ]; then
-    echo -en "$(tput setaf 6)ADDED$(tput sgr0)\n\n${added}\n\n"
+    pastel paint "$added_fg" --on "$added_bg" " added "
+    echo -en "\n${added}\n\n"
 fi
 
+# UPDATED
 updated="$(git diff --stat-width=75 | sort -k 3)"
+update_bg="peru"
+update_fg="$(pastel textcolor "$update_bg")"
 if [ -n "$updated" ]; then
-    echo -en "$(tput setaf 5)UPDATED$(tput sgr0)\n\n${updated}\n\n"
+    pastel paint "$update_fg" --on "$update_bg" " updated "
+    echo -en "\n${updated}\n"
 fi
 
-echo -en "-----------------------------------\n\n"
-
+# SUMMARY
+summary_bg="steelblue"
+summary_fg="$(pastel textcolor "$summary_bg")"
+echo -en "\n"
+pastel paint "$summary_fg" --on "$summary_bg" " summary "
+echo -en "\n"
 total_files_touched="$(git s | wc -l)"
 echo "total files touched: ${total_files_touched}"
-
 time_since_last_commit="$(git rev-parse HEAD | git show -s --format=%cr)"
 echo -en "time since last commit:    ${time_since_last_commit}\n\n"
