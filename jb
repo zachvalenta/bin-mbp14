@@ -17,7 +17,6 @@ fi
 added="$(git ls-files --others --exclude-standard)"
 added_bg="lawngreen"
 added_fg="$(pastel textcolor "$added_bg")"
-
 if [ -n "$added" ]; then
     pastel paint "$added_fg" --on "$added_bg" " added "
     echo -en "\n${added}\n\n"
