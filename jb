@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd "$HOME/Desktop/zvmac/notes"
+cd "$HOME/Desktop/zvmac/notes" || exit
 echo -en "\n"
 
 # RM / MV
