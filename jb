@@ -8,7 +8,6 @@ mvrm="$(git ls-files --deleted)"
 mvrm_bg="orangered"
 mvrm_fg="$(pastel textcolor "$mvrm_bg")"
 if [ -n "$mvrm" ]; then
-    # echo -en "$(tput setaf 1)DELETED / MOVED$(tput sgr0)\n\n${deleted_or_moved}\n\n"
     pastel paint "$mvrm_fg" --on "$mvrm_bg" " moved / removed "
     echo -en "\n${mvrm}\n\n"
 fi
@@ -23,7 +22,7 @@ if [ -n "$added" ]; then
 fi
 
 # UPDATED
-updated="$(git diff --stat-width=75 | sort -k 3)"
+updated="$(git diff --stat-width=75 | sort -k 3 | sed \$d)"
 update_bg="peru"
 update_fg="$(pastel textcolor "$update_bg")"
 if [ -n "$updated" ]; then
