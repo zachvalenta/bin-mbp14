@@ -21,22 +21,33 @@ if [ -n "$added" ]; then
     echo -en "\n${added}\n\n"
 fi
 
-# UPDATED
+# WORKING TREE
 updated="$(git diff --stat-width=75 | sort -k 3 | sed \$d)"
 update_bg="peru"
 update_fg="$(pastel textcolor "$update_bg")"
 if [ -n "$updated" ]; then
-    pastel paint "$update_fg" --on "$update_bg" " updated "
+    pastel paint "$update_fg" --on "$update_bg" " working tree "
     echo -en "\n${updated}\n"
 fi
-
-# SUMMARY
-summary_bg="steelblue"
-summary_fg="$(pastel textcolor "$summary_bg")"
-echo -en "\n"
-pastel paint "$summary_fg" --on "$summary_bg" " summary "
 echo -en "\n"
 total_files_touched="$(git s | wc -l)"
 echo "total files touched: ${total_files_touched}"
 time_since_last_commit="$(git rev-parse HEAD | git show -s --format=%cr)"
 echo -en "time since last commit:    ${time_since_last_commit}\n\n"
+
+# SPRINT
+sprint_bg="steelblue"
+sprint_fg="$(pastel textcolor "$sprint_bg")"
+pastel paint "$sprint_fg" --on "$sprint_bg" " sprint "
+echo -en "\n"
+sprint_commits="$(git log master..sprint --oneline)"
+echo -en "${sprint_commits}\n\n"
+
+
+# MASTER
+master_bg="pink"
+master_fg="$(pastel textcolor "$master_bg")"
+pastel paint "$master_fg" --on "$master_bg" " master "
+echo -en "\n"
+recent_commits="$(git log master -n 3 --oneline --decorate)"
+echo -en "${recent_commits}\n\n"
