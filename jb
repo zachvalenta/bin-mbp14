@@ -28,12 +28,12 @@ update_fg="$(pastel textcolor "$update_bg")"
 if [ -n "$updated" ]; then
     pastel paint "$update_fg" --on "$update_bg" " working tree "
     echo -en "\n${updated}\n"
+    echo -en "\n"
+    total_files_touched="$(git s | wc -l)"
+    echo "total files touched: ${total_files_touched}"
+    time_since_last_commit="$(git rev-parse HEAD | git show -s --format=%cr)"
+    echo -en "time since last commit:    ${time_since_last_commit}\n\n"
 fi
-echo -en "\n"
-total_files_touched="$(git s | wc -l)"
-echo "total files touched: ${total_files_touched}"
-time_since_last_commit="$(git rev-parse HEAD | git show -s --format=%cr)"
-echo -en "time since last commit:    ${time_since_last_commit}\n\n"
 
 # SPRINT
 sprint_bg="steelblue"
