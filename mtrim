@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+
+from argparse import ArgumentParser
+from sys import argv, exit
+
+from pydub import AudioSegment
+
+
+def parse():
+    parser = ArgumentParser()
+    parser.add_argument("-f", "--file", help="file")
+    parser.add_argument("-s", "--start", type=int, help="start trim")
+    parser.add_argument("-e", "--end", type=int, help="end trim")
+    if len(argv) == 1:
+        parser.print_help()
+        exit()
+    return parser.parse_args()
+
+
+def trim(file, start, end):
+    if not start and not end:
+        print("specify trim")
+        exit()
+    name, fmt = file.split(".")
+    seg = AudioSegment.from_file(file)
+    if start and end:
+        trim = seg[start*1000:end*1000]
+    elif start:
+        trim = seg[start*1000:]
+    else:
+        trim = seg[:end*1000]
+    trim.export(f"{name}-cp.{fmt}", format=fmt)
+
+
+args = parse()
+trim(file=args.file, start=args.start, end=args.end)
