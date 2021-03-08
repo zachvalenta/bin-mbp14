@@ -40,14 +40,14 @@ sprint_bg="steelblue"
 sprint_fg="$(pastel textcolor "$sprint_bg")"
 pastel paint "$sprint_fg" --on "$sprint_bg" " sprint "
 echo -en "\n"
-sprint_commits="$(git log master..sprint --oneline)"
+sprint_commits="$(git log main..sprint --oneline)"
 echo -en "${sprint_commits}\n\n"
 
 
-# MASTER
-master_bg="pink"
-master_fg="$(pastel textcolor "$master_bg")"
-pastel paint "$master_fg" --on "$master_bg" " master "
+# MAIN
+main_bg="pink"
+main_fg="$(pastel textcolor "$main_bg")"
+pastel paint "$main_fg" --on "$main_bg" " main "
 echo -en "\n"
-recent_commits="$(git log master -n 3 --oneline --decorate)"
+recent_commits="$(git log main -n 3 --oneline --decorate)"
 echo -en "${recent_commits}\n\n"
