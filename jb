@@ -3,24 +3,6 @@
 cd "$HOME/Desktop/zvmac/notes" || exit
 echo -en "\n"
 
-# RM / MV
-mvrm="$(git ls-files --deleted)"
-mvrm_bg="orangered"
-mvrm_fg="$(pastel textcolor "$mvrm_bg")"
-if [ -n "$mvrm" ]; then
-    pastel paint "$mvrm_fg" --on "$mvrm_bg" " moved / removed "
-    echo -en "\n${mvrm}\n\n"
-fi
-
-# ADDED
-added="$(git ls-files --others --exclude-standard)"
-added_bg="lawngreen"
-added_fg="$(pastel textcolor "$added_bg")"
-if [ -n "$added" ]; then
-    pastel paint "$added_fg" --on "$added_bg" " added "
-    echo -en "\n${added}\n\n"
-fi
-
 # WORKING TREE
 updated="$(git diff --stat-width=75 | sort -k 3 | sed \$d)"
 update_bg="peru"
@@ -35,10 +17,28 @@ if [ -n "$updated" ]; then
     echo -en "time since last commit:    ${time_since_last_commit}\n\n"
 fi
 
+# ADDED
+added="$(git ls-files --others --exclude-standard)"
+added_bg="lawngreen"
+added_fg="$(pastel textcolor "$added_bg")"
+if [ -n "$added" ]; then
+    pastel paint "$added_fg" --on "$added_bg" " added files "
+    echo -en "\n${added}\n\n"
+fi
+
+# RM / MV
+mvrm="$(git ls-files --deleted)"
+mvrm_bg="orangered"
+mvrm_fg="$(pastel textcolor "$mvrm_bg")"
+if [ -n "$mvrm" ]; then
+    pastel paint "$mvrm_fg" --on "$mvrm_bg" " moved / removed files "
+    echo -en "\n${mvrm}\n\n"
+fi
+
 # SPRINT
 sprint_bg="steelblue"
 sprint_fg="$(pastel textcolor "$sprint_bg")"
-pastel paint "$sprint_fg" --on "$sprint_bg" " sprint "
+pastel paint "$sprint_fg" --on "$sprint_bg" " sprint so far..."
 echo -en "\n"
 sprint_commits="$(git log main..sprint --oneline)"
 echo -en "${sprint_commits}\n\n"
