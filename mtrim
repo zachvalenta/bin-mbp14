@@ -9,8 +9,8 @@ from pydub import AudioSegment
 def parse():
     parser = ArgumentParser()
     parser.add_argument("-f", "--file", help="file")
-    parser.add_argument("-s", "--start", type=int, help="start trim")
-    parser.add_argument("-e", "--end", type=int, help="end trim")
+    parser.add_argument("-s", "--start", type=int, help="trim from start in seconds")
+    parser.add_argument("-e", "--end", type=int, help="trim from end in seconds")
     if len(argv) == 1:
         parser.print_help()
         exit()
