@@ -4,25 +4,13 @@ echo "dev"
 rg "dev" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
 echo "muz"
 rg "muz" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
-echo "lianjie"
-rg "lianjie" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
-echo "meditate"
-rg "meditate" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
-echo "read"
-rg "read" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
-echo "train"
-rg "train" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
-echo "chess"
-rg "chess" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
-echo "cook"
-rg "cook" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
 echo "dance"
 rg "dance" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
-echo "golf"
-rg "golf" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
 echo "skate"
 rg "skate" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
 echo "viz"
 rg "viz" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
-echo "yuyan"
-rg "yuyan" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
+echo "train"
+rg "train" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
+echo "lianjie"
+rg "lianjie" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'

@@ -2,4 +2,4 @@
 
 from random import sample
 
-print(sample(["dance", "meditate", "golf swing", "music", "music", "viz", "skate", "chess"], 1))
+print(sample(["dance", "ear training", "key + progression", "read", "skate"], 1))
