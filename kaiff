@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-ls | sort -f | head -1 | xargs open

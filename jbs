@@ -14,7 +14,7 @@ if [ -n "$added" ]; then
     echo -en "$(tput setaf 6)ADDED$(tput sgr0)\n\n${added}\n\n"
 fi
 
-updated="$(git diff --stat-width=75 master..sprint)"
+updated="$(git diff --stat-width=75 main..sprint)"
 if [ -n "$updated" ]; then
     echo -en "$(tput setaf 5)UPDATED$(tput sgr0)\n\n${updated}\n\n"
 fi
