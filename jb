@@ -5,18 +5,18 @@ echo -en "\n"
 
 # WORKING TREE
 updated="$(git diff --stat-width=75 | sort -k 3 | sed \$d)"
-updated_jay="$(git diff --stat-width=75 jay/ | sort -k 3 | sed \$d)"
-updated_sw="$(git diff --stat-width=75 sw/ | sort -k 3 | sed \$d)"
-updated_za="$(git diff --stat-width=75 za/ | sort -k 3 | sed \$d)"
+updated_art="$(git diff --stat-width=75 art/ | sort -k 3 | sed \$d)"
+updated_humanities="$(git diff --stat-width=75 humanities/ | sort -k 3 | sed \$d)"
+updated_stem="$(git diff --stat-width=75 stem/ | sort -k 3 | sed \$d)"
 update_bg="peru"
 update_fg="$(pastel textcolor "$update_bg")"
 if [ -n "$updated" ]; then
     pastel paint "$update_fg" --on "$update_bg" " working tree "
-    echo -en "\n${updated_jay}\n"
+    echo -en "\n${updated_art}\n"
     echo -en "\n"
-    echo -en "\n${updated_sw}\n"
+    echo -en "\n${updated_humanities}\n"
     echo -en "\n"
-    echo -en "\n${updated_za}\n"
+    echo -en "\n${updated_stem}\n"
     echo -en "\n"
     total_files_touched="$(git s | wc -l)"
     echo "total files touched: ${total_files_touched}"
@@ -49,7 +49,6 @@ pastel paint "$sprint_fg" --on "$sprint_bg" " sprint so far..."
 echo -en "\n"
 sprint_commits="$(git log main..sprint --oneline)"
 echo -en "${sprint_commits}\n\n"
-
 
 # MAIN
 main_bg="pink"
