@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # order asc
-cd "$HOME/Desktop/zvmac/notes"
+cd "$HOME/Desktop/zvmac/notes/domains"
 echo -en "\n"
 
 deleted_or_moved="$(git ls-files --deleted)"

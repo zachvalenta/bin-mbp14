@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd "$HOME/Desktop/zvmac/notes" || exit
+cd "$HOME/Desktop/zvmac/notes/domains" || exit
 echo -en "\n"
 
 # WORKING TREE
